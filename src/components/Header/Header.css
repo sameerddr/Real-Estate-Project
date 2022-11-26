@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.links a {
+    padding: 0px 35px;
+    text-decoration: none;
+    color: black;
+    /* margin-top: 20px; */
+    /* padding-top: 20px; */
+}
+
+.links {
+    margin-top: 10px;
+}
+
+
+/* .btn {
+    padding: 0px 90px;
+} */
+
+.btn Button {
+    margin: 0px 3px;
+}
+
+.btn a {
+    text-decoration: none;
+    color: white;
+}
+
+.btn #login {
+    color: blue;
+}
