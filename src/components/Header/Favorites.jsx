@@ -1,13 +1,24 @@
-import React, { useContext } from "react";
+import React from "react";
 import { data } from "../../App";
-function Favorites() {
-  const { favroites } = useContext(data);
-  console.log(favroites);
+import Card from "../Main/Card";
+function Favorites({ favorites }) {
   return (
     <>
-      {/* {first.map((first) => (
-        <div className="fav">{first}</div>
-      ))} */}
+      {favorites?.map(
+        ({ name, location, beds, bathrooms, price, size, img }) => (
+          <div className="cardbox">
+            <Card
+              name={name}
+              location={location}
+              beds={beds}
+              bathrooms={bathrooms}
+              price={price}
+              size={size}
+              img={img}
+            />
+          </div>
+        )
+      )}
     </>
   );
 }

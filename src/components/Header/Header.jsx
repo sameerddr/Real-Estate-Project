@@ -1,14 +1,16 @@
 import React from "react";
-import Container from "react-bootstrap/Container";
-import { Navbar, Nav } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import NavDropdown from "react-bootstrap/NavDropdown";
+import Container from "react-bootstrap/Container";
 import Button from "react-bootstrap/Button";
+import { Navbar, Nav } from "react-bootstrap";
+
 import "./Header.css";
 function Header() {
   return (
     <>
       <div className="Header">
+
         <Navbar collapseOnSelect expand="lg" bg="light" variant="light">
           <Container>
             <Navbar.Brand>
@@ -16,7 +18,7 @@ function Header() {
             </Navbar.Brand>
             <Nav className="me-auto nav_bar_wrapper">
               <div className="links">
-                <Link to="/rent">Rent</Link>
+                <Link to="/">Rent</Link>
 
                 <Link to="/buy">Buy</Link>
 
@@ -24,6 +26,7 @@ function Header() {
 
                 <Link to="/favorites">Favorites</Link>
               </div>
+
               <NavDropdown title="Manage Property" id="collasible-nav-dropdown">
                 <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
                 <NavDropdown.Item href="#action/3.2">
@@ -52,17 +55,13 @@ function Header() {
                 </NavDropdown.Item>
               </NavDropdown>
 
-              <div className="btn">
-                <Button variant="outline-primary">
-                  <Link to="/login" id="login">
-                    Login
-                  </Link>
+                <Button variant="outline-success" className="btn" size="sm">
+                  Login
+                </Button>
+                <Button variant="outline-secondary" size="sm">
+                  Signup
                 </Button>
 
-                <Button>
-                  <Link to="/signup">Signup</Link>
-                </Button>
-              </div>
             </Nav>
           </Container>
         </Navbar>

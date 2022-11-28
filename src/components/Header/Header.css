@@ -8,28 +8,18 @@
     padding: 0px 35px;
     text-decoration: none;
     color: black;
-    /* margin-top: 20px; */
-    /* padding-top: 20px; */
+    font-family: serif;
+    font-weight: 300;
 }
 
 .links {
     margin-top: 10px;
 }
 
-
-/* .btn {
-    padding: 0px 90px;
-} */
-
-.btn Button {
-    margin: 0px 3px;
+.btn {
+    margin: 8px 10px 8px 20px;
 }
 
 .btn a {
     text-decoration: none;
-    color: white;
-}
-
-.btn #login {
-    color: blue;
 }
